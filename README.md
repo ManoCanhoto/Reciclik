@@ -1,7 +1,7 @@
 🌱 Projeto – Site de Sustentabilidade e Reciclagem
 📄 Sobre o Projeto
 
-Este projeto foi desenvolvido como atividade final do primeiro semestre do curso de Desenvolvimento de Sistemas, realizado na ETEC Furlan, com duração aproximada de 2 semanas.
+Este projeto foi desenvolvido como atividade final do primeiro semestre do curso de Desenvolvimento de Sistemas, realizado na ETEC Furlan.
 
 O objetivo da atividade foi criar um site de vendas, aplicando as principais linguagens de programação estudadas no primeiro semestre: HTML, CSS e JavaScript.
 
