@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reciclik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Reciclick</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Bem-vindo à Reciclick </h2>
+    <p>Com apenas um click, você pode melhorar o planeta.</p>
+     <a href="#contato" class="btn-peca-agora">Peça Agora</a>
+  </section>
+
+  <hr class="linha-separadora">
+
+  <section id="produtos">
+    <h2>Produtos feitos com as nossas reciclagens:</h2>
+    <div class="produtos-container" id="produtos-container">
+    </div>
+    <div id="modal-produto" class="modal-produto">
+      <div class="modal-conteudo">
+        <span id="fechar-modal" class="fechar-modal">&times;</span>
+        <img id="modal-img" src="" alt="" />
+        <h3 id="modal-titulo"></h3>
+        <p id="modal-desc"></p>
+        <p id="modal-preco"></p>
+        <a id="modal-btn-compra" href="#" class="btn-compra" target="_blank">Comprar</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Carrinho -->
+  <div id="carrinho" class="carrinho">
+    <h2>Resumo do Pedido</h2>
+    <div id="lista-carrinho"></div>
+    <div id="total-carrinho"></div>
+    <button id="finalizar-pedido" class="btn-finalizar">Finalizar Pedido</button>
+    <div id="finalizacao-msg" class="finalizacao-msg"></div>
+  </div>
+
+  <hr class="linha-separadora">
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+            O Reciclique nasceu para simplificar a reciclagem e aproximar pessoas de um futuro mais sustentável. Com apenas um clique, você solicita um caminhão de coleta diretamente para sua casa — rápido, seguro e sem complicação.
+        </p>
+        <p>
+            Hoje, já ajudamos a transformar hábitos em resultados concretos:
+        </p>
+        <div class="impacto-cards">
+            <div class="impacto-card">
+                <span class="impacto-num">+ de 12.000</span>
+                <span class="impacto-info">coletas realizadas</span>
+            </div>
+            <div class="impacto-card">
+                <span class="impacto-num">850</span>
+                <span class="impacto-info">toneladas de materiais reciclados</span>
+            </div>
+            <div class="impacto-card">
+                <span class="impacto-num">1.400</span>
+                <span class="impacto-info">toneladas de CO₂ reduzidas (estimativa)</span>
+            </div>
+            <div class="impacto-card">
+                <span class="impacto-num">+ de 30</span>
+                <span class="impacto-info">bairros atendidos diariamente</span>
+            </div>
+            <div class="impacto-card">
+                <span class="impacto-num">4,9★</span>
+                <span class="impacto-info">avaliação média dos usuários</span>
+            </div>
+        </div>
+        <p>Nossos números mostram o tamanho do impacto, mas nosso orgulho está no cotidiano: cada garrafa reaproveitada, cada móvel descartado com responsabilidade, cada família que escolhe reciclar conosco.
+Acreditamos que o futuro nasce das escolhas de agora — e o Reciclique existe para tornar essas escolhas fáceis, rápidas e acessíveis para todos. 🌍✨</p>
+</section>
+
+<hr class="linha-separadora">
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form id="form-contato">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <div id="popup-enviado" class="popup-enviado">
+    <div class="popup-conteudo">
+      Mensagem enviada com sucesso!
+      <span id="fechar-popup" class="fechar-popup">&times;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
